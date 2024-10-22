@@ -4,6 +4,6 @@
   hosts: all
   tasks:
     - name: Asegurarse de que el sistema está actualizado
-      dnf:
+      ansible.builtin.dnf:
         name: "*"
         state: latest
