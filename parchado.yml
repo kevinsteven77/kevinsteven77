@@ -2,6 +2,7 @@
 - name: Parcha un conjunto de servidores linux
   # A quienes se les va a operar 
   hosts: all
+  become: true
   tasks:
     - name: Asegurarse de que el sistema está actualizado
       ansible.builtin.dnf:
